@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مدرسه داتین</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="assets/fonts/iranyekanX/fontiran.css">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <nav class="navbar px-4 py-3">
+    <div class="container.fluid logo-container">
+      <a class="navbar-brand ms-auto ms-2" href="#">
+        <img src="assets/img/logo.png" alt="لوگو" width="80" height="auto">
+      </a>
+    </div>
+  </nav>
+  <div class="container main-section">
+    <div class="d-flex justify-content-end mb-4">
+    </div>
+    <div class="row align-items-center g-3 ">
+      <div class="col-lg-6 order-lg-2 text-lg-start text-center">
+        <img src="assets/img/main-pic02.png" alt="تصویر اصلی" class="img-fluid main-pic ">
+      </div>
+      <div class="col-lg-6 order-lg-1 main-content text-lg-start text-center">
+
+        <div class="mainslogan mb-3">مدرسه داتین حرکت به سوی فردایی روشن</div>
+        <div class="subtext mb-4">یادبگیر، بساز، بدرخش</div>
+      
+        <!-- بخش دکمه و شمارنده‌ها در کنار هم عمودی -->
+        <div class="d-flex flex-column align-items- gap-5">
+      
+          <!-- دکمه -->
+           <a>
+            <button class="big-button w-90 w-md-auto mx-center">کلیک کنید</button>
+
+           </a>
+      
+          <!-- شمارنده‌ها -->
+          <div class="d-flex flex-wrap justify-content-lg-start justify-content-center gap-4 w-100">
+            <div class="text-start">
+              <div><span class="counter" data-target="150">0</span><span class="plus-icon">+</span></div>
+              <p class="p1">نفر دانشجو</p>
+            </div>
+            <div class="text-center">
+              <div><span class="counter" data-target="500">0</span><span class="plus-icon">+</span></div>
+              <p class="p2">دقیقه آموزش</p>
+            </div>
+          </div>          
+        </div>
+        </div>  
+        <script>
+          const counters = document.querySelectorAll('.counter');
+          const speed = 50;
+        
+          counters.forEach(counter => {
+            const updateCount = () => {
+              const target = +counter.getAttribute('data-target');
+              const count = +counter.innerText;
+        
+              const increment = Math.ceil(target / speed);
+        
+              if (count < target) {
+                counter.innerText = count + increment;
+                setTimeout(updateCount, 30);
+              } else {
+                counter.innerText = target;
+              }
+            };
+        
+            updateCount();
+          });
+        </script>      
+    </div>
+  </div>
+</body>
+</html>

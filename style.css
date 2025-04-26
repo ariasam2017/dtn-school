@@ -1,0 +1,425 @@
+body {
+    font-family: iranyekanX;
+    background: linear-gradient(to left, #f5f5f5, #d1d1d1);
+    direction: rtl;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .main-section{
+    display: flex;
+    justify-content: center;
+    margin-top: -6em;
+    padding: 2rem 1rem;
+    margin-left: -2em;
+    flex: 1 1 500px;
+    max-width: 600px;
+
+    
+  }
+
+  .main-content{
+    margin-left: -5px;
+  }
+
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+
+  .main-pic {
+    margin-top:7em;
+    max-width: 100%;
+    width: 110%;
+    transform: scale(1.2);
+    margin-right: -12em;
+    
+  }
+
+  .mainslogan {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #006839;
+    line-height: 1.5;
+    margin-top: -2em;
+  }
+  .subtext {
+    font-size: 1.2rem;
+    color: #6e6e6e;
+    line-height: 1.5;
+    font-weight: 700;
+  }
+  .big-button {
+    background: linear-gradient(to bottom, hsl(32, 93%, 54%), #f26522);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.8em 2em;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .counter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #006839;
+    font-family: IRANYekanXFaNum;
+    font-weight: 1000;
+  }
+  .plus-icon {
+    color: #006839;
+    font-size: 2rem;
+    margin-right: 5px;
+  }
+  .p1, .p2 {
+    color: #6e6e6e;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+
+/*
+Media Query
+*/
+
+  @media (max-width: 768px) {
+    .main-section {
+      margin-top: 1rem;
+      font-size: medium;
+      margin-left: 0;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .main-content {
+      margin-left: 0;
+      text-align: center;
+    }
+
+    .main-pic {
+      transform: none;
+      width: 100%;
+      margin: auto;
+      margin-top: 2rem;
+      margin-right: 0;
+    }
+
+    .mainslogan {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .subtext {
+      font-size: 1rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+
+    .logo img {
+      width: auto;
+      text-align: center;
+      height: auto;
+    }
+
+    .big-button {
+      width: 100%;
+      font-size: 1rem;
+      padding: 0.7em;
+      margin-bottom: 1rem;
+    }
+
+    .d-flex.flex-wrap.justify-content-start {
+      justify-content: center !important;
+      flex-direction: row;
+      gap: 1rem;
+    }
+
+    .counter, .plus-icon {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .p1, .p2 {
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 576px) {
+      .main-section {
+        margin-top: 100px;
+        padding: 1rem;
+      }
+    
+      .main-content {
+        text-align: center;
+        align-items: center !important;
+      }
+    
+      .main-pic {
+        display: block;
+        margin:  auto;
+        transform: none;
+        width: 100%;
+        margin-top: 1rem;
+      }
+    
+      .mainslogan {
+        font-size: 1.3rem;
+        margin-top: 0.5rem;
+        line-height: 1.6;
+
+      }
+    
+      .subtext {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+      }
+    
+      .big-button {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 250px;
+        font-size: 0.95rem;
+
+        
+
+        /*992*/
+
+        @media (max-width: 992px) {
+          .main-section {
+            margin-top: 100px;
+            padding: 2rem 1rem;
+          }
+        
+          .main-content {
+            text-align: center;
+            align-items: center !important;
+            margin-left: 0;
+          }
+        
+          .main-pic {
+            display: block;
+            margin:  auto;
+            width: 100%;
+            max-width: 450px;
+            transform: none;
+            margin-top: 1.5rem;
+          }
+        
+          .mainslogan {
+            font-size: 1.6rem;
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 1.7rem
+          }
+        
+          .subtext {
+            font-size: 1rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+          }
+        
+          .big-button {
+            width: 100%;
+            max-width: 300px;
+            font-size: 1rem;
+            margin: 0 auto;
+            display: block;
+          }
+        
+          .counter, .plus-icon {
+            font-size: 1.6rem;
+            text-align: center;
+          }
+        
+          .p1, .p2 {
+            font-size: 0.85rem;
+            text-align: center;
+          }
+        
+          .d-flex.flex-wrap.justify-content-start {
+            justify-content: center !important;
+          }
+        }
+
+        /*1200*/
+        
+        @media (max-width: 1200px) {
+          .main-section {
+            margin-top: 100px;
+            padding: 2rem;
+          } 
+        
+          .main-content {
+            text-align: center;
+            align-items: center;
+            margin-left: 0;
+          }
+        
+          .main-pic {
+            display: block;
+            margin:  auto;
+            transform: none;
+            width: 100%;
+            max-width: 500px;
+            margin-top: 2rem;
+          }
+        
+          .mainslogan {
+            font-size: 1.8rem;
+            text-align: center;
+            margin-top: 1rem;
+          }
+        
+          .subtext {
+            font-size: 1.1rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+          }
+        
+          .big-button {
+            width: 100%;
+            max-width: 320px;
+            font-size: 1.05rem;
+            margin: 0 auto;
+            display: block;
+          }
+        
+          .counter, .plus-icon {
+            font-size: 1.8rem;
+            text-align: center;
+          }
+        
+          .p1, .p2 {
+            font-size: 0.9rem;
+            text-align: center;
+          }
+        
+          .d-flex.flex-wrap.justify-content-start {
+            justify-content: center !important;
+          }
+        }  
+  }
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .main-section {
+      max-width: 90vw;
+      margin: 0 auto;
+      padding: 2rem ;
+    }
+  
+    .main-content {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .image-container {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .image-container img {
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+
+
+
+  @media (max-width: 991px) and (min-width: 768px) {
+    .main-section {
+      margin-top: 100px;
+      padding: 1.5rem;
+    }
+  
+    .main-pic {
+      max-width: 450px;
+      margin:  auto;
+      margin-bottom: 2rem;
+      transform: none;
+    }
+  
+    .mainslogan {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    .subtext {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .big-button {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      margin: 1rem auto;
+      font-size: 1rem;
+    }
+  
+    .counter, .plus-icon, .p1, .p2 {
+      text-align: center;
+    }
+  
+    .d-flex.flex-wrap.justify-content-start {
+      justify-content: center !important;
+    }
+  }
+
+  
+  @media (max-width: 880px) and (min-width: 768px) {
+    .mainslogan {
+      font-size: 1.35rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  @media (max-width: 880px) and (min-width: 768px) {
+    .mainslogan {
+      font-size: 1.25rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  
+    .big-button {
+      max-width: 250px;
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+      font-size: 1rem;
+      padding: 0.6rem 1rem;
+    }
+  
+    .main-content {
+      align-items: center;
+      text-align: center;
+    }
+  
+    .d-flex.flex-wrap.justify-content-start {
+      justify-content: center !important;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+

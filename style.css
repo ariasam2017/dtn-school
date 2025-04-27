@@ -6,20 +6,9 @@ body {
     overflow-y: auto;
   }
 
-  .main-section{
-    display: flex;
-    justify-content: center;
-    margin-top: -6em;
-    padding: 2rem 1rem;
-    margin-left: -2em;
-    flex: 1 1 500px;
-    max-width: 600px;
-
-    
-  }
 
   .main-content{
-    margin-left: -5px;
+    margin-left: -6em;
   }
 
   .logo img {
@@ -32,7 +21,7 @@ body {
     max-width: 100%;
     width: 110%;
     transform: scale(1.2);
-    margin-right: -12em;
+    margin-right: -18em;
     
   }
 
@@ -48,6 +37,7 @@ body {
     color: #6e6e6e;
     line-height: 1.5;
     font-weight: 700;
+
   }
   .big-button {
     background: linear-gradient(to bottom, hsl(32, 93%, 54%), #f26522);
@@ -64,11 +54,13 @@ body {
     color: #006839;
     font-family: IRANYekanXFaNum;
     font-weight:1000;
+
   }
   .plus-icon {
     color: #006839;
     font-size: 2rem;
     margin-right: 5px;
+    
   }
   .p1, .p2 {
     color: #6e6e6e;
@@ -101,7 +93,6 @@ Media Query
       width: 100%;
       margin: auto;
       margin-top: 2rem;
-      margin-right: 0;
     }
 
     .mainslogan {
@@ -189,6 +180,7 @@ Media Query
         /*992*/
 
         @media (max-width: 992px) {
+          
           .main-section {
             margin-top: 100px;
             padding: 2rem 1rem;
@@ -253,12 +245,16 @@ Media Query
             padding: 2rem;
           } 
         
+          .right-section-new{
+           
+            margin-left: -10em;
+          }
           .main-content {
             text-align: center;
             align-items: center;
             margin-left: 0;
           }
-        
+
           .main-pic {
             display: block;
             margin:  auto;
@@ -272,6 +268,7 @@ Media Query
             font-size: 1.8rem;
             text-align: center;
             margin-top: 1rem;
+            margin-right: -3em;
           }
         
           .subtext {
@@ -306,19 +303,21 @@ Media Query
     }
   }
 
-  @media (min-width: 1440px) {
-    .main-section {
+  @media (max-width: 1760px) and (min-width: 1450px) {    .main-section {
       max-width: 90vw;
       margin: 0 auto;
       padding: 2rem ;
     }
-  
+
+
+
     .main-content {
       max-width: 600px;
       width: 100%;
       margin: 0 auto;
       text-align: center;
       align-items: center;
+      margin-right: 1em ;
     }
   
     .image-container {
@@ -332,7 +331,34 @@ Media Query
       height: auto;
     }
   }
+  @media (min-width: 1760px) {
+    .main-section {
+      max-width: 90vw;
+      margin: 0 auto;
+      padding: 2rem ;
+    }
+
+    .main-content {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      align-items: center;
+      margin-left: 6em;
+      margin-bottom: 9em;
+    }
   
+    .image-container {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .image-container img {
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+    }
+  }
 
 
 
@@ -418,7 +444,6 @@ Media Query
   @media (max-width: 768px) {
     .navbar {
       display: flex;
-      justify-content: center;
       width: 100%;
     }
   }
